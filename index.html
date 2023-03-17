@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&family=Rubik:wght@500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  <!-- 
+
+    Bikin array di JS buat elemen ny, isi arraynya itu buat class style tailwind
+
+    myArray.forEach(className => {
+  myDiv.classList.add(className);
+});
+
+bikin kalkulasi buat rata rata nilai dari kelima score itu. (JS)
+   -->
+  <style>
+    *{padding:0; margin:0;}
+    html{font-size:16px;}
+    body {font-family: 'Hanken Grotesk', sans-serif;font-family: 'Rubik', sans-serif;}
+    .attribution { font-size: 11px; text-align: center; justify-content:flex-end;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .item-summary{
+      display:flex;
+      flex-direction:row;
+      padding : 1.2rem 1rem;
+      margin-top : 1rem;
+      border-radius :1rem;
+    }
+      .text-category{
+        padding-left: 0.7rem;
+      }
+    .flex-grow {
+      flex-grow: 1;
+    }
+    .result {
+      height: fit-content;
+      background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    }
+      .your-result, .of-100, .review{
+        color:hsl(241, 100%, 89%);
+        /* font-weight:400; */
+      }
+      .average{
+        background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+      }
+  </style>
+  <script src="script.js"></script>
+</head>
+<body class="bg-red-300 flex flex-col justify-between">
+
+<div class="content">
+
+  <div class="result text-white flex flex-col text-center py-8 px-[5rem] rounded-b-[3.2rem]">
+    <p class="your-result font-light">Your Result<p>
+    <div class="average w-[150px] h-[150px] rounded-full flex flex-col justify-center align-middle mx-auto mt-5">
+      <p id="average-rate" class="text-5xl">76</p>
+      <p class="of-100 pt-3">of 100</p>
+    </div>
+    <p id="result-summary" class="text-[1.3rem] mt-5"> Great</p>
+    <p class="review text-[0.8rem] font-extralight pt-2"> You scored higher than 65% of the people who have taken these tests.</p>
+  </div>
+
+  <div class="summary-section px-10 mt-5 mb-6">
+    <div class="text-[1.5rem]">
+      <p>Summary</p>
+    </div>
+  
+    <div class="list-items pt-5 flex flex-col">
+  
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="continue-btn py-6 text-white text-center rounded-full mx-10 bg-[#303B5A] hover:bg-gradient-to-b from-[#7857FF] to-[#2E2BE9]
+  ">
+    <a href="#" class="">Continue</a>
+  </div>
+  <div class="attribution mt-5 ">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</div>
+</body>
+</html>
