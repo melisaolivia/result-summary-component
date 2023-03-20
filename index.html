@@ -14,20 +14,12 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 
   <!-- 
-
-    Bikin array di JS buat elemen ny, isi arraynya itu buat class style tailwind
-
-    myArray.forEach(className => {
-  myDiv.classList.add(className);
-});
-
-bikin kalkulasi buat rata rata nilai dari kelima score itu. (JS)
    -->
   <style>
     *{padding:0; margin:0;}
     html{font-size:16px;}
     body {font-family: 'Hanken Grotesk', sans-serif;font-family: 'Rubik', sans-serif;}
-    .attribution { font-size: 11px; text-align: center; justify-content:flex-end;}
+    .attribution { color:hsl(0, 0%, 70%);font-size: 11px; text-align: center; justify-content:flex-end;}
     .attribution a { color: hsl(228, 45%, 44%); }
     .item-summary{
       display:flex;
@@ -56,10 +48,18 @@ bikin kalkulasi buat rata rata nilai dari kelima score itu. (JS)
       .average{
         background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
       }
+
+    .continue-btn{
+      background-color : hsl(224, 30%, 27%);
+    }
+      .continue-btn:hover{
+        background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+
+      }
   </style>
   <script src="script.js"></script>
 </head>
-<body class="bg-red-300 flex flex-col justify-between">
+<body class="flex flex-col justify-between">
 
 <div class="content">
 
@@ -78,20 +78,17 @@ bikin kalkulasi buat rata rata nilai dari kelima score itu. (JS)
       <p>Summary</p>
     </div>
   
-    <div class="list-items flex flex-col mb-8">
-  
-    </div>
+    <div class="list-items flex flex-col mb-8"></div>
   </div>
 </div>
 
 <div class="footer">
-  <div class="continue-btn py-6 text-white text-center rounded-full mx-10 bg-[#303B5A] hover:bg-gradient-to-b from-[#7857FF] to-[#2E2BE9]
-  ">
+  <div class="continue-btn py-6 text-white text-center rounded-full mx-10">
     <a href="#" class="">Continue</a>
   </div>
   <div class="attribution mt-5 ">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/melisaolivia" target="_blank">Melisa Olivia</a>.
   </div>
 </div>
 </body>
