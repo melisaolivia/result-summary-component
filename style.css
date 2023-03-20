@@ -1,0 +1,40 @@
+*{padding:0; margin:0;}
+html{font-size:16px;}
+body {font-family: 'Hanken Grotesk', sans-serif;font-family: 'Rubik', sans-serif;}
+.attribution { color:hsl(0, 1%, 57%);font-size: 11px; text-align: center; justify-content:flex-end;}
+.attribution a { color: hsl(228, 45%, 44%); }
+.item-summary{
+  display:flex;
+  flex-direction:row;
+  padding : 1.2rem 1rem;
+  margin-top : 1rem;
+  border-radius :1rem;
+}
+  .text-category{
+    padding-left: 0.7rem;
+  }
+  .of-one-hundread{
+    color:hsl(223, 3%, 51%);
+    padding-left:0.3rem;
+  }
+.flex-grow {
+  flex-grow: 1;
+}
+.result {
+  height: fit-content;
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+  .your-result, .of-100, .review{
+    color:hsl(241, 100%, 89%);
+  }
+  .average{
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  }
+
+.continue-btn{
+  background-color : hsl(224, 30%, 27%);
+}
+  .continue-btn:hover{
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+
+  }
