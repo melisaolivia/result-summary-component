@@ -15,7 +15,7 @@ Users should be able to:
 
 ## Links
 
-- Live Site URL: [Result Summary Component](https://)
+- Live Site URL: [Result Summary Component](https://melisaolivia.github.io/result-summary-component/)
 - My Github Profile : [Melisa Olivia](https://github.com/melisaolivia)
 
 ## My process
