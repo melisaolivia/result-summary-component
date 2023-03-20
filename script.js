@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (event) {
-    const jsonData = 
-    `[{
+    const jsonObject = 
+    [{
         "category": "Reaction",
         "score": 80,
         "icon": "./assets/images/icon-reaction.svg",
@@ -27,25 +27,55 @@ document.addEventListener("DOMContentLoaded", function (event) {
         "icon": "./assets/images/icon-visual.svg",
         "background-color" : "#F3F3FD",
         "text-color" : "hsl(234, 85%, 45%)"
-      }]`
+      }]
     ;
+  
+    function DisplayAverageScore(jsonObject) { 
+      // average value
+      const totalScore = jsonObject.reduce((acc, obj) => acc + obj.score, 0);
+      const averageScore = Math.round(totalScore / jsonObject.length);
 
-    const jsonObject = JSON.parse(jsonData);
+      const averageRateElement = document.getElementById("average-rate");
+      averageRateElement.textContent = averageScore;
 
-    console.log(jsonObject);
-    console.log(typeof jsonObject);
-    // AVERAGE RESULT (NILAI RATA2)
+      // result summary
+      let resultSummary;
+      switch (true) {
+        case averageScore >= 90:
+          resultSummary = "Awesome";
+          break;
+        case averageScore >= 80:
+          resultSummary = "Really Great";
+          break;
+        case averageScore >= 70:
+          resultSummary = "Great";
+          break;
+        case averageScore >= 60:
+          resultSummary = "Good";
+          break;
+        case averageScore >= 50:
+          resultSummary = "Okay";
+          break;
+        case averageScore >= 40:
+          resultSummary = "Below Average";
+          break;
+        default:
+          resultSummary = "Needs Improvement";
+          break;
+      }
 
+      const resultSummaryElement = document.getElementById("result-summary");
+      resultSummaryElement.textContent = resultSummary;
+    }
 
-    // ITEMS SUMMARY
-    // parent
+    DisplayAverageScore(jsonObject);
+
     const listItem = document.querySelector(".list-items");
-    
 
+    // render the object to element
     jsonObject.forEach(item => {
         const Eachitem = document.createElement("div");
         Eachitem.className = "item-summary";
-        // Eachitem.style.backgroundColor = item.background-color;
         Eachitem.style["background-color"] = item["background-color"];
         // EACH ITEM
 
@@ -58,16 +88,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
         score.className = "score";
         const textScore = document.createElement("p");
         const ofOneHundread = document.createElement("p");
+          ofOneHundread.className = "of-one-hundread";
         const flexGrow = document.createElement("div");
-          flexGrow.className = "flex-grow";
-
-
-
+        flexGrow.className = "flex-grow";
+        
         icon.src = item.icon;
         icon.alt = `${item.category} icon`;
         textCategory.textContent = item.category;
         textScore.textContent = item.score;
-        ofOneHundread.textContent = " / 100";
+        ofOneHundread.textContent = "/ 100";
         
         Eachitem.appendChild(icon);
         Eachitem.appendChild(textCategory);
@@ -77,16 +106,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         listItem.appendChild(Eachitem);
     });
-
-    /*
-    90 or higher: Awesome
-    80-89: Really great
-    70-79: Great
-    60-69: Good
-    50-59: Okay
-    40-49: Below average
-    39 or lower: Needs improvement
-    */
 
     
 

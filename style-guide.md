@@ -47,12 +47,3 @@ Use transparency to get the colour variations necessary to match the design. Hin
 
 - Family: [Hanken Grotesk](https://fonts.google.com/specimen/Hanken+Grotesk)
 - Weights: 500, 700, 800
-
-Dear Louren, Hi! long time no see you. The last time I see you is when we're still in school, where the pandemic has not start yet. We're a really close back then. Always chatting even there's a teacher was teaching, when the break time, and while attend the curch beside school every Thursday. We always together everywhere by four, with me, Aurel, April, and Evelyn. 
-When we're using face swapping in the snapchat, to swap our face, and it's really ugly tho seeing how that filter get bug.
-
-Honestly I'd a very fun time spending my year in junior high school with you guys in the school. You always laughing when hearing my jokes, your loud voice when your talking, you're high pitch tone when you laughing. I ever said your voice is like 7 octaf when you laughing and that's like a kunti voices.
-
-I really waiting the moment when we'll meet again after this 3 years who seperated us away. Even I already move the new school in senior high school now. I really hope you always happy who ever your friend in there, always happy, and always safe where ever you had been. I thinks it's already enough. Thankyou for spending your time to read this letter.
-
-From Melisa.
